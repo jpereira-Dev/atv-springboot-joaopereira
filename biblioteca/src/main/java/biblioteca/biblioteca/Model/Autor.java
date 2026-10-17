@@ -30,8 +30,7 @@ public class Autor {
     private String nacionalidade;
 
     // Adicione a relação com Livro aqui
-    @OneToMany
-    @JoinColumn(name = "autor")
+    @OneToMany(mappedBy = "autor", cascade = CascadeType.REMOVE, orphanRemoval = true)
     private List<Livro> livrosDoAutor;
 
 }

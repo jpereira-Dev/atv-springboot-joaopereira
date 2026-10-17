@@ -33,9 +33,9 @@ public class Livro {
 
     @Column(name = "ISBN", nullable = false)
     @JsonProperty("ISBN")
-    private String ISBN;
+    private String isbn;
 
-    @Column(name = "ds_tituloLivro", nullable = false)
+    @Column(name = "tituloLivro", nullable = false)
     @JsonProperty("titulo")
     private String titulo;
 
